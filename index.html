@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & The Box Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Basics & The Box Model</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+        
+        <main>
+            <section class="content-section">
+                <h2>Understanding CSS Basics</h2>
+                <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML. CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+                
+                <h3>Key CSS Concepts</h3>
+                <p>CSS works by associating rules with HTML elements. These rules govern how the content of specified elements should be displayed. A CSS rule contains two parts: a selector and a declaration.</p>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Selectors</h3>
+                        <p>Selectors are patterns used to select the element(s) you want to style. They can be based on element type, class, ID, attributes, or relationships between elements.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Properties</h3>
+                        <p>CSS properties determine the styles applied to selected elements. Examples include color, font-size, margin, padding, and many more.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Values</h3>
+                        <p>Each property is assigned a value. For example, a color property might have a value of "red" or "#FF0000", and a margin property might have a value of "20px".</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>The CSS Box Model</h2>
+                <p>The CSS box model is a fundamental concept that describes the rectangular boxes generated for elements in the document tree. Each box has four areas: content, padding, border, and margin.</p>
+                
+                <div class="box-model-demo">
+                    <div class="box">
+                        <h3>Content Area</h3>
+                        <p>This area contains the actual content of the element, such as text, an image, or other media. Its dimensions are the content width and content height.</p>
+                    </div>
+                    
+                    <div class="margin-demo">
+                        <h3>Margin Area</h3>
+                        <p>The margin is the outermost layer that surrounds the box. It creates transparent space outside the border, separating the element from other elements.</p>
+                        <div class="border-demo">
+                            <h3>Border Area</h3>
+                            <p>The border extends around the padding (if any) and content. Borders can be styled with different colors, widths, and styles.</p>
+                            <div class="padding-demo">
+                                <h3>Padding Area</h3>
+                                <p>The padding extends around the content area. It creates space inside the element, between the content and the border.</p>
+                                <div class="content-demo">
+                                    <h3>Content Area</h3>
+                                    <p>This is the actual content of the element, where text and images appear.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3>Box Model Properties</h3>
+                <p>Understanding how to manipulate these properties is essential for creating well-designed layouts:</p>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Width and Height</h3>
+                        <p>By default, these properties apply to the content box only. With <code>box-sizing: border-box</code>, they apply to border box instead.</p>
+                        <a href="#" class="button">Learn More</a>
+                    </div>
+                    <div class="card">
+                        <h3>Padding</h3>
+                        <p>Controls the space between the content and the border. Can be set individually for each side (top, right, bottom, left).</p>
+                        <a href="#" class="button button-success">Examples</a>
+                    </div>
+                    <div class="card">
+                        <h3>Margin</h3>
+                        <p>Controls the space outside the border, creating separation between elements. Margins can collapse in certain situations.</p>
+                        <a href="#" class="button button-secondary">Details</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="content-section">
+                <h2>Practical Examples</h2>
+                <p>Here are some practical examples of how the box model properties are used in real web design:</p>
+                
+                <h3>Button Styles</h3>
+                <p>Buttons are a great example of the box model in action. Padding creates internal spacing, borders define edges, and margins provide separation.</p>
+                
+                <div class="button-demo">
+                    <a href="#" class="button">Primary Button</a>
+                    <a href="#" class="button button-secondary">Secondary Button</a>
+                    <a href="#" class="button button-success">Success Button</a>
+                </div>
+                
+                <h3>Card Components</h3>
+                <p>Card-based layouts are popular in modern web design. They use padding for internal spacing, margins for separation, and borders or shadows for visual distinction.</p>
+                
+                <div class="card-container">
+                    <div class="card">
+                        <h3>Product Card</h3>
+                        <p>This card demonstrates how padding creates comfortable internal spacing, while margins separate it from other elements.</p>
+                        <a href="#" class="button">View Product</a>
+                    </div>
+                    <div class="card">
+                        <h3>Service Card</h3>
+                        <p>Notice how consistent padding and margins create a harmonious layout between different cards.</p>
+                        <a href="#" class="button">Learn More</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>CSS Basics & The Box Model Demonstration</p>
+            <p>Created with pure HTML and CSS - No external libraries or frameworks</p>
+        </footer>
+    </div>
+</body>
+</html>
